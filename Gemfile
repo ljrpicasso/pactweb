@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
 
+ruby '1.9.3'
 gem 'rails', '3.2.11'
 
-#gem 'sqlite3'
-gem 'pg'
 gem 'annotate', ">=2.5.0"
 
 
@@ -17,12 +16,19 @@ group :assets do
 end
 
 group :development do
+  gem 'sqlite3'
   gem 'better_errors'
   gem 'binding_of_caller'
 end
 
-group :testing do
+group :test do
+  gem 'sqlite3'
   gem 'rspec'
+end
+
+group :production do
+  gem 'pg'
+  gem 'thin'
 end
 
 gem 'jquery-rails'
@@ -30,3 +36,4 @@ gem 'jquery-rails'
 # To use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
 
+gem 'heroku'

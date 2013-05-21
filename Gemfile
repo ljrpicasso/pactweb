@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 ruby '1.9.3'
 gem 'rails', '3.2.11'
 
+gem 'devise'
 gem 'annotate', ">=2.5.0"
 
 
@@ -19,6 +20,7 @@ group :development do
   gem 'sqlite3'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'letter_opener'
 end
 
 group :test do

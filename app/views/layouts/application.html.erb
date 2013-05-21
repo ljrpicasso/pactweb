@@ -25,7 +25,7 @@
   <ul class="title-area">
     <!-- Title Area -->
     <li class="name">
-      <h1><a href="#">Top Bar Title </a></h1>
+      <h1><a href="#">PACT on the web</a></h1>
     </li>
     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
     <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -36,10 +36,6 @@
   <ul class="left">
     <li class="divider"></li>
     <li class="active"><a href="#">Main Item 1</a></li>
-    <li class="divider"></li>
-    <li><a href="#">Main Item 2</a></li>
-    <li class="divider"></li>
-    <li><a href="#">Main Item 3</a></li>
     <li class="divider"></li>
   </ul>
 
@@ -64,9 +60,35 @@
     <li class="has-form">
       <a class="button" href="#">Tickets!</a>
     </li>
+    <% if user_signed_in? %>
+      <li>
+        <%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %>        
+      </li>
+    <% else %>
+      <li>
+        <%= link_to 'Login', new_user_session_path %>  
+      </li>
+    <% end %>
+    <% if user_signed_in? %>
+      <li>
+        <%= link_to 'Edit account', edit_user_registration_path %>
+      </li>
+      <%#<% if current_user.has_role? :admin%>%>
+        <%#<li>%>
+          <%#<%= link_to 'Admin', users_path%>%>
+        <%#</li>%>
+      <%#<% end%>%>
+    <% else %>
+      <li>
+        <%= link_to 'Sign up', new_user_registration_path %>
+      </li>
+    <% end %>
   </ul>
   </section>
   </nav>
+
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
 
   <%= yield %>
 

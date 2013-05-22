@@ -4,7 +4,10 @@ ruby '1.9.3'
 gem 'rails', '3.2.11'
 
 gem 'devise'
+gem 'cancan'
+gem 'rolify'
 gem 'annotate', ">=2.5.0"
+gem 'figaro'
 
 
 # Gems used only for assets and not required
@@ -26,6 +29,7 @@ end
 group :test do
   gem 'sqlite3'
   gem 'rspec'
+  gem 'cucumber'
 end
 
 group :production do

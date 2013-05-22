@@ -21,6 +21,10 @@
 </head>
 
 <body>
+
+  <%#Move the navigation specifics to:%>
+  <%#<%= render 'layouts/navigation' %>%>
+
   <nav class="top-bar">
   <ul class="title-area">
     <!-- Title Area -->
@@ -87,11 +91,14 @@
   </section>
   </nav>
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  <div class="container">
 
-  <%= yield %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <%#<%= render 'layouts/messages' %>  %>
 
+    <%= yield %>
+  </div>
 
   <%= javascript_include_tag "application" %>
 </body>

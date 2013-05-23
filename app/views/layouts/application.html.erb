@@ -23,7 +23,7 @@
 <body>
 
   <%#Move the navigation specifics to:%>
-  <%#<%= render 'layouts/navigation' %>%>
+  <%#<%= render 'layouts/navigation' %>
 
   <nav class="top-bar">
   <ul class="title-area">
@@ -39,14 +39,15 @@
   <!-- Left Nav Section -->
   <ul class="left">
     <li class="divider"></li>
-    <li class="active"><a href="#">Main Item 1</a></li>
+    <li><a href="#">Now Playing</a></li>
+    <li><a href="#">Calendar</a></li>
     <li class="divider"></li>
   </ul>
 
   <!-- Right Nav Section -->
   <ul class="right">
     <li class="divider hide-for-small"></li>
-    <li><a href="#">Main Item 4</a></li>
+    <li><a href="#">About PACT</a></li>
     <li class="divider"></li>
     <li class="has-form">
       <form>
@@ -95,7 +96,7 @@
 
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%#<%= render 'layouts/messages' %>  %>
+    <%#<%= render 'layouts/messages' %> 
 
     <%= yield %>
   </div>

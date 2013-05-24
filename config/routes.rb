@@ -1,14 +1,15 @@
 Pactweb::Application.routes.draw do
   resources :notifications
-
-  devise_for :users
+  
+  authenticateed :user do
+    root :to => "static_pages#home"
+  end
 
   root :to => "static_pages#home"
+  devise_for :users
   
   get "static_pages/home"
-
   get "static_pages/help"
-
   get "static_pages/about"
 
   # The priority is based upon order of creation:

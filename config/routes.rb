@@ -1,7 +1,7 @@
 Pactweb::Application.routes.draw do
   resources :notifications
   
-  authenticateed :user do
+  authenticated :user do
     root :to => "static_pages#home"
   end
 

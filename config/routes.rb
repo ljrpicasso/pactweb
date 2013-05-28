@@ -1,6 +1,5 @@
 Pactweb::Application.routes.draw do
   resources :notifications
-  # resources :users
   
   authenticated :user do
     root :to => "static_pages#home"
@@ -8,7 +7,9 @@ Pactweb::Application.routes.draw do
 
   root :to => "static_pages#home"
   devise_for :users
-  
+  resources :users
+  match 'about', :to => "static_pages#about"
+ 
   #get "static_pages/home"
   #get "static_pages/help"
   #get "static_pages/about"

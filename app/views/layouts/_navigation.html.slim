@@ -1,17 +1,55 @@
-= link_to "pactWeb", root_path, :class => 'brand' 
-ul class="nav"
-  - if user_signed_in? 
+nav class="top-bar"
+  ul class="title-area"
+    <!-- Title Area -->
     li
-      = link_to('Logout', destroy_user_session_path, :method=>'delete')
-  - else
-    li
-      = link_to('Login', new_user_session_path)
-  - if user_signed_in? 
-    li
-      = link_to('Edit account', edit_user_registration_path) 
-      - if current_user.has_role? :admin 
+      = link_to "pactWeb", root_path, :class => 'brand' 
+    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    li class="toggle-topbar menu-icon"
+      a href="#"
+        span
+          | Menu
+  section class="top-bar-section"
+    <!-- Left Nav Section -->
+    ul class="left"
+      li class="divider"
+      li
+        a href="#"
+          | Now Playing
+      li
+        a href="#"
+          | Calendar
+      li class="divider"
+    <!-- Right Nav Section -->
+    ul class="right"
+      li class="divider hide-for-small"
+      li
+        a href="#"
+          | About PACT
+      li class="divider"
+      li class="has-form"
+        form
+          div class="row collapse"
+            div class="small-8 columns"
+              input type="text"
+            div class="small-4 columns"
+              a href="#" class="alert button"
+                | Search
+      li class="divider show-for-small"
+      li class="has-form"
+        a class="button" href="#"
+          | Tickets!
+      - if user_signed_in? 
         li
-          = link_to('Admin', users_path)
-  - else 
-    li
-      = link_to('Sign up', new_user_registration_path)
+          = link_to('Logout', destroy_user_session_path, :method=>'delete')
+      - else
+        li
+          = link_to('Login', new_user_session_path)
+      - if user_signed_in? 
+        li
+          = link_to('Edit account', edit_user_registration_path) 
+          - if current_user.has_role? :admin 
+            li
+              = link_to('Admin', users_path)
+      - else 
+        li
+          = link_to('Sign up', new_user_registration_path)

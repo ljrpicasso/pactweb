@@ -1,5 +1,6 @@
 Pactweb::Application.routes.draw do
   resources :notifications
+  # resources :users
   
   authenticated :user do
     root :to => "static_pages#home"
@@ -8,9 +9,11 @@ Pactweb::Application.routes.draw do
   root :to => "static_pages#home"
   devise_for :users
   
-  get "static_pages/home"
-  get "static_pages/help"
-  get "static_pages/about"
+  #get "static_pages/home"
+  #get "static_pages/help"
+  #get "static_pages/about"
+  #get "users/index"
+  #get "users/show"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

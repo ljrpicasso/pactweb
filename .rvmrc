@@ -1,1 +1,1 @@
-rvm use 1.9.3-p385@pactweb
+rvm use 1.9.3-p385@pactweb --create

@@ -9,6 +9,7 @@ gem 'rolify'
 gem 'annotate', ">=2.5.0"
 gem 'figaro'
 gem 'simple_form'
+gem 'slim'
 
 # Gems used only for assets and not required
 # in production environments by default.

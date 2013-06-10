@@ -1,5 +1,9 @@
 Pactweb::Application.routes.draw do
   
+  resources :posts do
+    resources :comments, :only => [:create]
+  end
+
   authenticated :user do
     root :to => "static_pages#home"
   end

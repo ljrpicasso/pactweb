@@ -1,8 +1,33 @@
-<h1>PACT</h1> <h2>the Portage Area Community Theater</h2>
-<p>Current list of website users:</p>
-<% @users.each do |user| %>
-  <p>User: <%=link_to user.name, user %></p>
-<% end %>
-<hr />
-<%= render :partial => @posts %>
-<hr />
+<h1>PACT</h1> <h3><i>the Portage Area Community Theater</i></h3>
+
+<div class="row">
+
+	<!-- Main Blog Content -->
+	<div class="large-9 columns" role="content">
+		<hr />
+		<%= render :partial => @posts %>
+
+	</div>
+
+	<!-- Sidebar -->
+	<aside class="large-3 columns">
+
+		<h5>Categories</h5>
+		<ul class="side-nav">
+			<li><a href="#">News</a></li>
+			<li><a href="#">Code</a></li>
+			<li><a href="#">Design</a></li>
+			<li><a href="#">Fun</a></li>
+			<li><a href="#">Weasels</a></li>
+		</ul>
+
+		<div class="panel">
+			<h5>Featured</h5>
+			<p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
+			<a href="#">Read More &rarr;</a>
+		</div>
+
+	</aside>
+	<!-- End Sidebar -->
+</div>
+	

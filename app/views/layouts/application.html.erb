@@ -15,9 +15,10 @@
 
   <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
 
-  <%= stylesheet_link_tag    "application" %>
+  <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "vendor/custom.modernizr" %>
   <%= csrf_meta_tags %>
+  <%= auto_discovery_link_tag(:atom, posts_path(:atom)) %>
 </head>
 
 <body>

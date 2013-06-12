@@ -20,6 +20,12 @@ test:
 
 production:
   adapter: postgresql
-  host: localhost
-  username: user
-  database: app-prod
+  encoding: unicode
+  pool: 5
+  database: d3g6tjkomi192k
+  username: gghuuifdbcjjkc
+  password: AwxFOXfsqnoYQ1FP7Q1zB0sVn7
+  host: ec2-23-21-129-229.compute-1.amazonaws.com
+  port: 5432
+
+  

@@ -25,11 +25,12 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'letter_opener'
+  gem "rspec-rails", "~> 2.0"
 end
 
 group :test do
   gem 'sqlite3'
-  gem 'rspec'
+  gem "rspec-rails", "~> 2.0"
   gem 'cucumber'
 end
 

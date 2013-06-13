@@ -1,7 +1,7 @@
 Pactweb::Application.routes.draw do
   
   resources :posts do
-    resources :comments, :only => [:create]
+    resources :post_comments, :only => [:create]
   end
 
   authenticated :user do
@@ -10,6 +10,9 @@ Pactweb::Application.routes.draw do
 
   root :to => "static_pages#home"
   devise_for :users
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+
   resources :users
   resources :notifications
 

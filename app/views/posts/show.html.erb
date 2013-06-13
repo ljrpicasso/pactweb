@@ -7,10 +7,10 @@
 
 <h2>Comments</h2>
   <div id="comments">
-    <%= render :partial => @post.comments %>
+    <%= render :partial => @post.post_comments %>
   </div>
 
-<%= form_for [@post, Comment.new], :remote => true do |f| %>
+<%= form_for [@post, PostComment.new], :remote => true do |f| %>
   <p>
     <h4><%= f.label :body, "New comment:" %></h4><br/>
     <%= f.text_area :body %>

@@ -10,7 +10,7 @@ feature 'Posting Comments' do
   scenario 'Posting a comment' do
     visit post_path(@post)
     comment = 'This post is just filler text. Ripped off!'
-    fill_in 'comment_body', :with => comment
+    fill_in 'body', :with => comment
     click_button 'Add comment'
     expect(page).to have_content comment
   end

@@ -13,9 +13,10 @@
 #
 
 class Post < ActiveRecord::Base
-  attr_accessible :body, :title, :published, :author, :author_id, :categories
+  attr_accessible :body, :title, :published, :author, :author_id, :category_ids
   validates_presence_of :body, :title
   has_many :post_comments
+  has_and_belongs_to_many :categories
 
   belongs_to :author, :class_name => "AdminUser"
 

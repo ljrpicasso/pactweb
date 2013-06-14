@@ -9,6 +9,7 @@
 #  updated_at :datetime         not null
 #  published  :boolean
 #  author_id  :integer
+#  categories :string(255)
 #
 
 require 'spec_helper'

@@ -1,5 +1,12 @@
-# == Route Map (Updated 2013-06-14 05:28)
+# == Route Map (Updated 2013-06-14 12:43)
 #
+#                     categories GET        /categories(.:format)                     categories#index
+#                                POST       /categories(.:format)                     categories#create
+#                   new_category GET        /categories/new(.:format)                 categories#new
+#                  edit_category GET        /categories/:id/edit(.:format)            categories#edit
+#                       category GET        /categories/:id(.:format)                 categories#show
+#                                PUT        /categories/:id(.:format)                 categories#update
+#                                DELETE     /categories/:id(.:format)                 categories#destroy
 #             post_post_comments POST       /posts/:post_id/post_comments(.:format)   post_comments#create
 #                          posts GET        /posts(.:format)                          posts#index
 #                                POST       /posts(.:format)                          posts#create
@@ -40,6 +47,14 @@
 #               admin_admin_user GET        /admin/admin_users/:id(.:format)          admin/admin_users#show
 #                                PUT        /admin/admin_users/:id(.:format)          admin/admin_users#update
 #                                DELETE     /admin/admin_users/:id(.:format)          admin/admin_users#destroy
+#  batch_action_admin_categories POST       /admin/categories/batch_action(.:format)  admin/categories#batch_action
+#               admin_categories GET        /admin/categories(.:format)               admin/categories#index
+#                                POST       /admin/categories(.:format)               admin/categories#create
+#             new_admin_category GET        /admin/categories/new(.:format)           admin/categories#new
+#            edit_admin_category GET        /admin/categories/:id/edit(.:format)      admin/categories#edit
+#                 admin_category GET        /admin/categories/:id(.:format)           admin/categories#show
+#                                PUT        /admin/categories/:id(.:format)           admin/categories#update
+#                                DELETE     /admin/categories/:id(.:format)           admin/categories#destroy
 #                admin_dashboard            /admin/dashboard(.:format)                admin/dashboard#index
 #       batch_action_admin_posts POST       /admin/posts/batch_action(.:format)       admin/posts#batch_action
 #                    admin_posts GET        /admin/posts(.:format)                    admin/posts#index
@@ -72,10 +87,16 @@
 #                                PUT        /notifications/:id(.:format)              notifications#update
 #                                DELETE     /notifications/:id(.:format)              notifications#destroy
 #                          about            /about(.:format)                          static_pages#about
+#                                           /404(.:format)                            errors#not_found
+#                                           /500(.:format)                            errors#internal_error
+#                                           /422(.:format)                            errors#unprocessable_entity
 #
 
 Pactweb::Application.routes.draw do
   
+  resources :categories
+
+
   resources :posts do
     resources :post_comments, :only => [:create]
   end

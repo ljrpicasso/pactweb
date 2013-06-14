@@ -9,12 +9,14 @@
 #  updated_at :datetime         not null
 #  published  :boolean
 #  author_id  :integer
+#  categories :string(255)
 #
 
 class Post < ActiveRecord::Base
-  attr_accessible :body, :title, :published, :author, :author_id
+  attr_accessible :body, :title, :published, :author, :author_id, :categories
   validates_presence_of :body, :title
   has_many :post_comments
+
   belongs_to :author, :class_name => "AdminUser"
 
   scope :published, where(:published => true)

@@ -15,6 +15,12 @@
 #  last_sign_in_ip        :string(255)
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
+#  name                   :string(255)
+#
+# Indexes
+#
+#  index_admin_users_on_email                 (email) UNIQUE
+#  index_admin_users_on_reset_password_token  (reset_password_token) UNIQUE
 #
 
 require 'spec_helper'

@@ -15,6 +15,12 @@
 #  last_sign_in_ip        :string(255)
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
+#  name                   :string(255)
+#
+# Indexes
+#
+#  index_admin_users_on_email                 (email) UNIQUE
+#  index_admin_users_on_reset_password_token  (reset_password_token) UNIQUE
 #
 
 class AdminUser < ActiveRecord::Base
@@ -25,11 +31,8 @@ class AdminUser < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me
+  attr_accessible :email, :name, :password, :password_confirmation, :remember_me
   # attr_accessible :title, :body
   has_many :posts
   
-  def name
-    email
-  end
 end

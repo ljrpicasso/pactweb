@@ -1,7 +1,7 @@
 nav class="top-bar"
   ul class="title-area"
     <!-- Title Area -->
-    li
+    li class="name"
       = link_to "pactWeb", root_path 
     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
     li class="toggle-topbar menu-icon"
@@ -25,18 +25,6 @@ nav class="top-bar"
       li
         = link_to 'About PACT', '/about' 
       li class="divider"
-      li class="has-form"
-        form
-          div class="row collapse"
-            div class="small-8 columns"
-              input type="text"
-            div class="small-4 columns"
-              a href="#" class="alert button"
-                | Search
-      li class="divider show-for-small"
-      li class="has-form"
-        a class="button" href="#"
-          | Tickets!
       - if user_signed_in? 
         li
           = link_to 'Logout', destroy_user_session_path, :method=>'delete'
@@ -52,3 +40,7 @@ nav class="top-bar"
       - else 
         li
           = link_to('Sign up', new_user_registration_path)
+	  ul class="has-form"
+		li
+		  a href="#" data-reveal-id="myModal" class="button ef-search-btn right"
+		

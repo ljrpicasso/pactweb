@@ -21,8 +21,10 @@
   <%= auto_discovery_link_tag(:atom, posts_path(:atom)) %>
 </head>
 
-<body>
+<body class="ef-boxed-ver">
+<div class="ef-wrapper">
 
+  <%= render 'layouts/topper' %>
   <%= render 'layouts/navigation' %>
 
   <div class="container">
@@ -38,5 +40,7 @@
   </div>
 
   <%= javascript_include_tag "application" %>
+
+</div>
 </body>
 </html>

@@ -6,7 +6,6 @@ gem 'rails', '3.2.11'
 gem 'devise'
 gem 'cancan'
 gem 'rolify'
-gem 'annotate', ">=2.5.0"
 gem 'figaro'
 gem 'simple_form'
 gem 'slim'
@@ -14,6 +13,7 @@ gem 'activeadmin'
 gem "meta_search", '>= 1.1.0.pre'
 gem 'redcarpet'
 gem 'rouge'
+gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
 
 # Gems used only for assets and not required
 # in production environments by default.

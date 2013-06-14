@@ -1,3 +1,79 @@
+# == Route Map (Updated 2013-06-14 05:28)
+#
+#             post_post_comments POST       /posts/:post_id/post_comments(.:format)   post_comments#create
+#                          posts GET        /posts(.:format)                          posts#index
+#                                POST       /posts(.:format)                          posts#create
+#                       new_post GET        /posts/new(.:format)                      posts#new
+#                      edit_post GET        /posts/:id/edit(.:format)                 posts#edit
+#                           post GET        /posts/:id(.:format)                      posts#show
+#                                PUT        /posts/:id(.:format)                      posts#update
+#                                DELETE     /posts/:id(.:format)                      posts#destroy
+#                           root            /                                         static_pages#home
+#                           root            /                                         static_pages#home
+#               new_user_session GET        /users/sign_in(.:format)                  devise/sessions#new
+#                   user_session POST       /users/sign_in(.:format)                  devise/sessions#create
+#           destroy_user_session DELETE     /users/sign_out(.:format)                 devise/sessions#destroy
+#                  user_password POST       /users/password(.:format)                 devise/passwords#create
+#              new_user_password GET        /users/password/new(.:format)             devise/passwords#new
+#             edit_user_password GET        /users/password/edit(.:format)            devise/passwords#edit
+#                                PUT        /users/password(.:format)                 devise/passwords#update
+#       cancel_user_registration GET        /users/cancel(.:format)                   devise/registrations#cancel
+#              user_registration POST       /users(.:format)                          devise/registrations#create
+#          new_user_registration GET        /users/sign_up(.:format)                  devise/registrations#new
+#         edit_user_registration GET        /users/edit(.:format)                     devise/registrations#edit
+#                                PUT        /users(.:format)                          devise/registrations#update
+#                                DELETE     /users(.:format)                          devise/registrations#destroy
+#         new_admin_user_session GET        /admin/login(.:format)                    active_admin/devise/sessions#new
+#             admin_user_session POST       /admin/login(.:format)                    active_admin/devise/sessions#create
+#     destroy_admin_user_session DELETE|GET /admin/logout(.:format)                   active_admin/devise/sessions#destroy
+#            admin_user_password POST       /admin/password(.:format)                 active_admin/devise/passwords#create
+#        new_admin_user_password GET        /admin/password/new(.:format)             active_admin/devise/passwords#new
+#       edit_admin_user_password GET        /admin/password/edit(.:format)            active_admin/devise/passwords#edit
+#                                PUT        /admin/password(.:format)                 active_admin/devise/passwords#update
+#                     admin_root            /admin(.:format)                          admin/dashboard#index
+#                           root            /                                         dashboard#index
+# batch_action_admin_admin_users POST       /admin/admin_users/batch_action(.:format) admin/admin_users#batch_action
+#              admin_admin_users GET        /admin/admin_users(.:format)              admin/admin_users#index
+#                                POST       /admin/admin_users(.:format)              admin/admin_users#create
+#           new_admin_admin_user GET        /admin/admin_users/new(.:format)          admin/admin_users#new
+#          edit_admin_admin_user GET        /admin/admin_users/:id/edit(.:format)     admin/admin_users#edit
+#               admin_admin_user GET        /admin/admin_users/:id(.:format)          admin/admin_users#show
+#                                PUT        /admin/admin_users/:id(.:format)          admin/admin_users#update
+#                                DELETE     /admin/admin_users/:id(.:format)          admin/admin_users#destroy
+#                admin_dashboard            /admin/dashboard(.:format)                admin/dashboard#index
+#       batch_action_admin_posts POST       /admin/posts/batch_action(.:format)       admin/posts#batch_action
+#                    admin_posts GET        /admin/posts(.:format)                    admin/posts#index
+#                                POST       /admin/posts(.:format)                    admin/posts#create
+#                 new_admin_post GET        /admin/posts/new(.:format)                admin/posts#new
+#                edit_admin_post GET        /admin/posts/:id/edit(.:format)           admin/posts#edit
+#                     admin_post GET        /admin/posts/:id(.:format)                admin/posts#show
+#                                PUT        /admin/posts/:id(.:format)                admin/posts#update
+#                                DELETE     /admin/posts/:id(.:format)                admin/posts#destroy
+#    batch_action_admin_comments POST       /admin/comments/batch_action(.:format)    admin/comments#batch_action
+#                 admin_comments GET        /admin/comments(.:format)                 admin/comments#index
+#                                POST       /admin/comments(.:format)                 admin/comments#create
+#                  admin_comment GET        /admin/comments/:id(.:format)             admin/comments#show
+#          batch_action_comments POST       /comments/batch_action(.:format)          comments#batch_action
+#                       comments GET        /comments(.:format)                       comments#index
+#                                POST       /comments(.:format)                       comments#create
+#                        comment GET        /comments/:id(.:format)                   comments#show
+#                          users GET        /users(.:format)                          users#index
+#                                POST       /users(.:format)                          users#create
+#                       new_user GET        /users/new(.:format)                      users#new
+#                      edit_user GET        /users/:id/edit(.:format)                 users#edit
+#                           user GET        /users/:id(.:format)                      users#show
+#                                PUT        /users/:id(.:format)                      users#update
+#                                DELETE     /users/:id(.:format)                      users#destroy
+#                  notifications GET        /notifications(.:format)                  notifications#index
+#                                POST       /notifications(.:format)                  notifications#create
+#               new_notification GET        /notifications/new(.:format)              notifications#new
+#              edit_notification GET        /notifications/:id/edit(.:format)         notifications#edit
+#                   notification GET        /notifications/:id(.:format)              notifications#show
+#                                PUT        /notifications/:id(.:format)              notifications#update
+#                                DELETE     /notifications/:id(.:format)              notifications#destroy
+#                          about            /about(.:format)                          static_pages#about
+#
+
 Pactweb::Application.routes.draw do
   
   resources :posts do

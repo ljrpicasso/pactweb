@@ -23,14 +23,21 @@ feature 'Reading the Blog' do
   
   context 'for a published post' do
     background do
-      @post = Post.create(:title => 'Awesome Blog Post', :body => 'Lorem ipsum dolor sit amet', :published => true)
-      Post.create(:title => 'Another Awesome Post', :body => 'Lorem ipsum dolor sit amet', :published => true)
+      email = 'admin@example.com'
+      password = 'password'
+      @admin = AdminUser.create(:email => email, :password => password)
+      
+      @post = Post.create(:title => 'Awesome Blog Post', :body => 'Lorem ipsum dolor sit amet', 
+                          :published => true, :author => @admin)
+      Post.create(:title => 'Another Awesome Post', :body => 'Lorem ipsum dolor sit amet', 
+                  :published => true, :author => @admin)
     end
 
     scenario 'Reading the blog index' do
       visit root_path
       expect(page).to have_content 'Awesome Blog Post'
       expect(page).to have_content 'Another Awesome Post'
+      expect(page).to have_content 'Posted by: admin@example.com'
     end
 
     scenario 'Reading an individual blog' do

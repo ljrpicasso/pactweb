@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   # GET /posts.json
   # GET /posts.atom
   def index
-    @posts = Post.all
+    @posts = Post.published
 
     respond_to do |format|
       format.html # index.html.erb
@@ -16,8 +16,8 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-    @post = Post.find(params[:id])
-
+    @post = Post.published.find(params[:id])
+    
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @post }

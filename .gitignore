@@ -2,6 +2,7 @@
 *.sassc
 .sass-cache
 **.swp
+**.DS_Store
 capybara-*.html
 .rspec
 /.bundle

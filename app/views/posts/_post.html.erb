@@ -1,13 +1,42 @@
-<article>
-	<h3><%= link_to_unless_current post.title, post %></h3>
+<div class="ef-post">
 
 	<div class="row">
-		<div class="large-9 columns">
-			<h6><i>Posted by: <%= post.author_name %></i></h6>
-			<%= post.content.html_safe %>
+
+		<div class="large-12 columns">
+		
+			<header>
+				
+				<h4>										
+					<a href="blog-single.html" class="ef-latest-thumb">
+					
+						<span class="ef-date-comment text-center">
+							<time datetime="2013-04-03">
+								<span class="ef-date ef-round">
+									<span>3</span><br />
+									<span class="ef-uppercase">Apr</span>
+								</span>
+							</time>
+							
+							<span class="ef-comments hide-for-print">8</span>
+						</span>
+						
+						<%= link_to_unless_current post.title, post %>
+						
+						<span class="ef-from-blog-img ef-proj-img"><img class="ef-radius" src="<%= image_path('content/img360x224.jpg') %>" alt="" /><span class="ef-loader"><span></span></span></span>
+					</a>										
+				</h4>
+				
+				<div class="ef-bloginfo">
+					<ul class="inline-list ef-uppercase">
+						<li class="ef-bloginfo-author">By <a href="blog-singel.html">
+						    <%= post.author_name %></a></li>
+						<li class="ef-bloginfo-cat">In: <a href="blog-singel.html">Category</a></li>
+					</ul>
+				</div>
+				
+			</header>
+			 <p><%= post.content.html_safe %>
+			 <a class="ef-more" href="blog-single.html">Read More &#8594;</a></p>
 		</div>
 	</div>
-</article>
-<hr />
-
-
+</div>

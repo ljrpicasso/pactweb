@@ -14,11 +14,11 @@ gem "meta_search", '>= 1.1.0.pre'
 gem 'redcarpet'
 gem 'rouge'
 gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
+gem 'sass-rails',   '~> 3.2.3'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
   gem 'zurb-foundation', '~> 4.0.0'

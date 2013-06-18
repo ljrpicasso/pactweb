@@ -1,3 +1,19 @@
-<h1>Listing posts</h1>
+<section class="ef-breadcrumbs ef-bottom-2_18">	
+	<nav class="row">
+		<div class="large-6 small-12 columns">
+			<h3>Blog Posts<small>Stories and Information from PACT</small></h3>
+		</div>
+		
+		<div class="large-6 small-12 columns text-right">
+			<ul class="breadcrumbs">
+			  <li><%= link_to "Home", root_path %></li>
+			  <li class="current"><a href="#">Blog</a></li>
+			</ul>
+		</div>
+	</nav>	
+</section>
+
 <%= render :partial => @posts %>
-<hr />
+
+<%= render :partial => "layouts/join_us" %>
+

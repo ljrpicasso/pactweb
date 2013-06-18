@@ -114,6 +114,8 @@ Pactweb::Application.routes.draw do
   resources :notifications
 
   match 'about', :to => "static_pages#about"
+  match 'membership', :to => "static_pages#membership"
+  
   match '/404', :to => 'errors#not_found'
   match '/500', :to => 'errors#internal_error'
   match '/422', :to => 'errors#unprocessable_entity'

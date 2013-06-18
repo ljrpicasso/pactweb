@@ -1,13 +1,19 @@
-footer
-  row
-    div.large-12.columns
-      hr
-      div.row
-        div.large-6.columns
-          p &copy; 2013 Portage Area Community Theater
-	    div.large-6.columns
-	      ul.inline-list.right
-	        li Link 1
-	        li Link 2
-	        li Link 3
-	        li Link 4
+footer id="ef-footer" class="hide-for-print"
+  section id="ef-footer-bottom"
+    div.row
+      div.large-7.columns
+        p &copy; 2013 PACT. 
+          Website Designed & Coded by <a href="http://johnribar.com" target="_blank">
+          John Ribar</a> for the Portage Area Community Theater
+	  div.large-5.columns.text-right
+		nav
+		  ul
+		    li
+		      = link_to "Home", root_path
+		    li
+		      = link_to "About", '/about'
+		    li
+		      = link_to "Blog", posts_path
+		    li
+		      = link_to "Membership", '/membership'
+	

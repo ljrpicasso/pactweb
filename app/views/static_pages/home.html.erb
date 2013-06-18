@@ -27,20 +27,20 @@
 	<!-- Sidebar -->
 	<aside class="large-3 columns">
 
-		<h5>Categories</h5>
-		<ul class="side-nav">
-			<li><a href="/about">About PACT</a></li>
-			<li><a href="#">Code</a></li>
-			<li><a href="#">Design</a></li>
-			<li><a href="#">Fun</a></li>
-			<li><a href="#">Weasels</a></li>
-		</ul>
-
 		<div class="panel">
 			<h5>Featured</h5>
-			<p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.
+			<p>Rocky Horror auditions and our New Short Film Competition.
 			<a href="#">Read More &rarr;</a></p>
 		</div>
+
+		<div class="panel">
+		  <h5>Categories</h5>
+		  <ul class="side-nav">
+		    <% @categories.each do |cat| %>
+			  <li><a href="#"><%= cat.title %></a></li>
+		    <% end %>
+		  </ul>
+    	</div>
 
 	</aside>
 	<!-- End Sidebar -->

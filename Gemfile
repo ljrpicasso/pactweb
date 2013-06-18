@@ -15,6 +15,7 @@ gem 'redcarpet'
 gem 'rouge'
 gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
 gem 'sass-rails',   '~> 3.2.3'
+gem 'fullcalendar-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.

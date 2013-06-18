@@ -14,6 +14,13 @@
 //= require jquery_ujs
 //= require foundation
 //= require custom
+//= require fullcalendar
 //= require_tree .
 
 // $(document).foundation();
+
+$.ajaxSetup({
+  beforeSend: function(xhr) {
+    xhr.setRequestHeader("Accept", "text/javascript");
+  }
+});

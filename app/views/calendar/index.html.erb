@@ -1,14 +1,13 @@
 <section class="ef-breadcrumbs ef-bottom-2_18">	
 <nav class="row">
 	<div class="large-6 small-12 columns">
-		<h3>Blog<small>A Single PACT Blog Entry</small></h3>
+		<h3>Calendar<small>Upcoming Events for Portage Area Community Theater</small></h3>
 	</div>
 	
 	<div class="large-6 small-12 columns text-right">
 		<ul class="breadcrumbs">
 		  <li><%= link_to "Home", root_path %></li>
-		  <li><%= link_to "Blog", posts_path %></li>
-		  <li class="current"><a href="#">Blog Entry</a></li>
+		  <li class="current"><a href="#">Calendar</a></li>
 		</ul>
 	</div>
 </nav>	
@@ -17,22 +16,12 @@
 <div class="row">
   <div class="large-8 columns">
 
-<p id="notice"><%= notice %></p>
 
-<%= render :partial => @post %>
+	<%= link_to "Event List", events_path %>
 
-<h2>Comments</h2>
-  <div id="comments">
-    <%= render :partial => @post.post_comments %>
-  </div>
+	<div id='calendar'></div>
 
-<%= form_for [@post, PostComment.new], :remote => true do |f| %>
-  <p>
-    <h3><%= f.label :body, "New comment:" %></h3><br/>
-    <%= f.text_area :body %>
-  </p>
-  <p><%= f.submit "Add comment" %></p>
-<% end %>
+	<%= link_to "New Event", new_event_path %>
 
   </div>
 	  

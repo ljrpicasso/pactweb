@@ -5,6 +5,7 @@ class PostsController < ApplicationController
   # GET /posts.atom
   def index
     @posts = Post.published
+    @show_more = true
 
     respond_to do |format|
       format.html # index.html.erb
@@ -17,6 +18,7 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @post = Post.published.find(params[:id])
+    @show_more = false
     
     respond_to do |format|
       format.html # show.html.erb

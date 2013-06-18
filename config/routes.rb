@@ -95,7 +95,7 @@
 Pactweb::Application.routes.draw do
   
   resources :categories
-
+  resources :events
 
   resources :posts do
     resources :post_comments, :only => [:create]
@@ -115,6 +115,8 @@ Pactweb::Application.routes.draw do
 
   match 'about', :to => "static_pages#about"
   match 'membership', :to => "static_pages#membership"
+  get "calendar/index"
+  match 'calendar', :to => "calendar#index"
   
   match '/404', :to => 'errors#not_found'
   match '/500', :to => 'errors#internal_error'

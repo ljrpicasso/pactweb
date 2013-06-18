@@ -1,6 +1,7 @@
 class StaticPagesController < ApplicationController
   def home
     @posts = Post.published
+    @show_more = true
     @categories = Category.all
   end
 

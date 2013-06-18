@@ -1,14 +1,13 @@
 <section class="ef-breadcrumbs ef-bottom-2_18">	
 <nav class="row">
 	<div class="large-6 small-12 columns">
-		<h3>Blog<small>A Single PACT Blog Entry</small></h3>
+		<h3>Events<small>Upcoming Events for Portage Area Community Theater</small></h3>
 	</div>
 	
 	<div class="large-6 small-12 columns text-right">
 		<ul class="breadcrumbs">
 		  <li><%= link_to "Home", root_path %></li>
-		  <li><%= link_to "Blog", posts_path %></li>
-		  <li class="current"><a href="#">Blog Entry</a></li>
+		  <li class="current"><a href="#">Calendar</a></li>
 		</ul>
 	</div>
 </nav>	
@@ -17,22 +16,36 @@
 <div class="row">
   <div class="large-8 columns">
 
-<p id="notice"><%= notice %></p>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Starts at</th>
+    <th>Ends at</th>
+    <th>All day</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
 
-<%= render :partial => @post %>
-
-<h2>Comments</h2>
-  <div id="comments">
-    <%= render :partial => @post.post_comments %>
-  </div>
-
-<%= form_for [@post, PostComment.new], :remote => true do |f| %>
-  <p>
-    <h3><%= f.label :body, "New comment:" %></h3><br/>
-    <%= f.text_area :body %>
-  </p>
-  <p><%= f.submit "Add comment" %></p>
+<% @events.each do |event| %>
+  <tr>
+    <td><%= event.title %></td>
+    <td><%= event.starts_at %></td>
+    <td><%= event.ends_at %></td>
+    <td><%= event.all_day %></td>
+    <td><%= event.description %></td>
+    <td><%= link_to 'Show', event %></td>
+    <td><%= link_to 'Edit', edit_event_path(event) %></td>
+    <td><%= link_to 'Destroy', event, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
 <% end %>
+</table>
+
+<br />
+<%= link_to 'view calendar', calendar_index_path %>
+<br/>
+<%= link_to 'New Event', new_event_path %>
 
   </div>
 	  
@@ -50,5 +63,5 @@
 	</aside>
 </div>
 
-	<%= render :partial => "layouts/join_us" %>
+<%= render :partial => "layouts/join_us" %>
 

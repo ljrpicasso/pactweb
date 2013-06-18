@@ -7,7 +7,7 @@
 			<header>
 				
 				<h4>										
-					<a href="blog-single.html" class="ef-latest-thumb">
+					<a href="#" class="ef-latest-thumb">
 					
 						<span class="ef-date-comment text-center">
 							<time datetime="2013-04-03">
@@ -36,7 +36,9 @@
 				
 			</header>
 			 <p><%= post.content.html_safe %></p>
+			 <% if @show_more %>
 			 <p><a class="ef-more" href="<%= post_path(post) %>">Read More &#8594;</a></p>
+			 <% end %>
 		</div>
 	</div>
 </div>

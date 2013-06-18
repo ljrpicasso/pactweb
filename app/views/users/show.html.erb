@@ -1,3 +1,4 @@
 <h3>User Information</h3>
 <p>User: <%= @user.name %></p>
 <p>Email: <%= @user.email if @user.email %></p>
+<p>Role(s): <%= @user.roles.first.name.titleize unless @user.roles.first.nil? %></p>

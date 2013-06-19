@@ -3,6 +3,7 @@ class StaticPagesController < ApplicationController
     @posts = Post.published
     @show_more = true
     @categories = Category.all
+    @tweets = Tweets.latest(3)
   end
 
   def help

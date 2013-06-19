@@ -34,7 +34,12 @@
 		</div>
 
 		<div class="panel">
-			<h5>Latest Tweets</h5>
+		  <h5>Latest Tweets</h5>
+		  <ul class="side-nav">
+			<% @tweets.each do |tw| %>
+			<li><%= tw.content %>
+			<% end %>
+		  </ul>
 		</div>
 
 		<div class="panel">

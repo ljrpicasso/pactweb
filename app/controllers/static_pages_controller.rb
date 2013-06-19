@@ -4,6 +4,7 @@ class StaticPagesController < ApplicationController
     @show_more = true
     @categories = Category.all
     @tweets = Tweets.latest(3)
+    @notifications = Notification.order("id DESC").all
   end
 
   def help

@@ -94,8 +94,6 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    faraday (0.8.7)
-      multipart-post (~> 1.1)
     fastercsv (1.5.5)
     figaro (0.6.4)
       bundler (~> 1.0)
@@ -105,7 +103,6 @@ GEM
     fullcalendar-rails (1.6.1.0)
     gherkin (2.12.0)
       multi_json (~> 1.3)
-    google-analytics-rails (0.0.4)
     has_scope (0.5.1)
     hike (1.2.2)
     i18n (0.6.4)
@@ -136,7 +133,6 @@ GEM
     mime-types (1.23)
     mini_portile (0.5.0)
     multi_json (1.7.3)
-    multipart-post (1.2.0)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
     orm_adapter (0.4.0)
@@ -194,7 +190,6 @@ GEM
     simple_form (2.1.0)
       actionpack (~> 3.0)
       activemodel (~> 3.0)
-    simple_oauth (0.2.0)
     slim (2.0.0)
       temple (~> 0.6.5)
       tilt (~> 1.3, >= 1.3.3)
@@ -210,10 +205,6 @@ GEM
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
-    twitter (4.8.1)
-      faraday (~> 0.8, < 0.10)
-      multi_json (~> 1.0)
-      simple_oauth (~> 0.2)
     tzinfo (0.3.37)
     uglifier (2.1.0)
       execjs (>= 0.3.0)
@@ -242,7 +233,6 @@ DEPENDENCIES
   devise
   figaro
   fullcalendar-rails
-  google-analytics-rails
   jquery-rails
   letter_opener
   meta_search (>= 1.1.0.pre)
@@ -256,6 +246,5 @@ DEPENDENCIES
   simple_form
   slim
   sqlite3
-  twitter
   uglifier (>= 1.0.3)
   zurb-foundation (~> 4.0.0)

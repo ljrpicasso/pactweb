@@ -14,6 +14,4 @@ class StaticPagesController < ApplicationController
   def membership
   end
   
-  def contact
-  end
 end

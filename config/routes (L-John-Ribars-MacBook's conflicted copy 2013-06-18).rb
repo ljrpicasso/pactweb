@@ -115,7 +115,6 @@ Pactweb::Application.routes.draw do
 
   match 'about', :to => "static_pages#about"
   match 'membership', :to => "static_pages#membership"
-  match 'contact', :to => "static_pages#contact"
   get "calendar/index"
   match 'calendar', :to => "calendar#index"
   

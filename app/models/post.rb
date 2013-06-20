@@ -20,7 +20,7 @@ class Post < ActiveRecord::Base
 
   belongs_to :author, :class_name => "AdminUser"
 
-  scope :published, where(:published => true)
+  scope :published, where(:published => true).order("updated_at DESC")
   
   def content
     MarkdownService.new.render(body)

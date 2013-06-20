@@ -4,6 +4,7 @@ ActiveAdmin.register Post do
     column :author
     column :title
     column :published
+    column :created_at
     column :updated_at
     # column post.categories.join(', ')
     actions
@@ -41,7 +42,7 @@ ActiveAdmin.register Post do
       end
     end
     
-    active_admin_comments
+    #active_admin_comments
   end
    
   form do |f|

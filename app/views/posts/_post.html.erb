@@ -10,14 +10,14 @@
 					<a href="#" class="ef-latest-thumb">
 					
 						<span class="ef-date-comment text-center">
-							<time datetime="2013-04-03">
+							<time datetime="<%= post.updated_at %>">
 								<span class="ef-date ef-round">
-									<span>3</span><br />
-									<span class="ef-uppercase">Apr</span>
+									<span><%= post.updated_at.strftime("%e") %></span><br />
+									<span class="ef-uppercase"><%= post.updated_at.strftime("%b") %></span>
 								</span>
 							</time>
 							
-							<span class="ef-comments hide-for-print">8</span>
+							<span class="ef-comments hide-for-print">0</span>
 						</span>
 						
 						<%= link_to_unless_current post.title, post %>

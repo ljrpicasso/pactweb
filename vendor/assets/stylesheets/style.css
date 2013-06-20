@@ -652,7 +652,7 @@ a, input, textarea, .top-bar-section .dropdown, .tp-bullets.simplebullets.round 
 }
 
 .top-bar a.button.ef-search-btn, .top-bar-section ul li > a.button.ef-search-btn:hover {
-	background-image: url('../images/magnifier.png');
+	background-image: url("<%= image_tag('magnifier.png') %>");
 }
 
 .top-bar-section .has-form {
@@ -936,7 +936,7 @@ a, input, textarea, .top-bar-section .dropdown, .tp-bullets.simplebullets.round 
 
 .ef-breadcrumbs {
 	padding: 0.9375em 0;
-	background-image: url('../images/slider-shad-bot.png');
+	background-image: url("<%= image_tag 'slider-shad-bot.png' %>");
 	background-position: left bottom;
 	background-repeat: repeat-x;
 	border-bottom-width: 1px;
@@ -955,7 +955,7 @@ a, input, textarea, .top-bar-section .dropdown, .tp-bullets.simplebullets.round 
 	width: 100%;
 	height: 35px;
 	content: '';
-	background-image: url('../images/breadcr-shad.png');
+	background-image: url("<%= image_tag 'breadcr-shad.png' %>");
 	background-position: left top;
 	background-repeat: repeat-x;
 }
@@ -1119,7 +1119,7 @@ a, input, textarea, .top-bar-section .dropdown, .tp-bullets.simplebullets.round 
 	margin-left: -7px;
 	width: 14px;
 	height: 4px;
-	background-image: url('../images/portfolio-tags-arrow.png');
+	background-image: url("<%= image_tag 'portfolio-tags-arrow.png' %>");
 	background-repeat: no-repeat;
 	background-position: center bottom;
 }
@@ -1179,11 +1179,11 @@ a, input, textarea, .top-bar-section .dropdown, .tp-bullets.simplebullets.round 
 }
 
 .ef-carousel-nav a#ef-prev, .ef-carousel-nav a#ef-prev1, a.post-slider-prev {
-	background-image: url('../images/carousel-prev.png');
+	background-image: url("<%= image_tag 'carousel-prev.png' %>");
 }
 
 .ef-carousel-nav a#ef-next, .ef-carousel-nav a#ef-next1, a.post-slider-next {
-	background-image: url('../images/carousel-next.png');
+	background-image: url("<%= image_tag 'carousel-next.png' %>");
 }
 
 /**** Start: Recommended Isotope styles ****/
@@ -1279,7 +1279,7 @@ a, input, textarea, .top-bar-section .dropdown, .tp-bullets.simplebullets.round 
 	display: inline-block!important;
 	margin-top: 0.250em;
 	position: relative;
-	background-image: url('../images/slider-paging-bg.gif');
+	background-image: url("<%= image_tag 'slider-paging-bg.gif' %>");
 	background-position: 0 50%;
 	background-repeat: repeat-x;
 }
@@ -1465,19 +1465,19 @@ a, input, textarea, .top-bar-section .dropdown, .tp-bullets.simplebullets.round 
 }
 
 .ef-bloginfo-date {
-	background-image: url('../images/bloginfo-date.png');
+	background-image: url("<%= image_tag 'bloginfo-date.png' %>");
 }
 
 .ef-bloginfo-author {
-	background-image: url('../images/bloginfo-author.png');
+	background-image: url("<%= image_tag 'bloginfo-author.png' %>");
 }
 
 .ef-bloginfo-cat {
-	background-image: url('../images/bloginfo-cat.png');
+	background-image: url("<%= image_tag 'bloginfo-cat.png' %>");
 }
 
 .ef-bloginfo-comment {
-	background-image: url('../images/bloginfo-comment.png');
+	background-image: url("<%= image_tag 'bloginfo-comment.png' %>");
 }
 
 .ef-bloginfo a {
@@ -1686,7 +1686,7 @@ input.valid, textarea.valid, .ef-contact-slider.valid a {
 
 #ef-footer {
 	padding-top: 2.188em;
-	background-image: url('../images/slider-shad-top.png');
+	background-image: url("<%= image_tag 'slider-shad-top.png' %>");
 	background-repeat: repeat-x;
 	background-position: left top;
 }

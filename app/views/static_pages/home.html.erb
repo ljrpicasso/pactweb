@@ -33,11 +33,11 @@
 			<a href="#">Read More &rarr;</a></p>
 		</div>
 
-		<div class="panel .ef-list">
+		<div class="panel">
 		  <h5>Latest Tweets</h5>
 		  <ul class="side-nav">
 			<% @tweets.each do |tw| %>
-			<li><%= tw.content %>
+			<li class="bullet-item"><%= tw.content %>
 			<% end %>
 		  </ul>
 		</div>

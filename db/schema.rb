@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130618233355) do
+ActiveRecord::Schema.define(:version => 20130620210030) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -62,15 +62,11 @@ ActiveRecord::Schema.define(:version => 20130618233355) do
   add_index "categories_posts", ["post_id"], :name => "index_categories_posts_on_post_id"
 
   create_table "events", :force => true do |t|
-    t.string   "title"
-    t.string   "location"
-    t.integer  "event_type"
-    t.datetime "starts_at"
-    t.datetime "ends_at"
-    t.boolean  "all_day"
-    t.text     "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.string   "name"
+    t.datetime "start_at"
+    t.datetime "end_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "notifications", :force => true do |t|

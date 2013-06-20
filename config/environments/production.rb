@@ -2,7 +2,7 @@ Pactweb::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # Google Analytics
-  GA.tracker = "UA-xxxxxx-x"
+  GA.tracker = "UA-39304426-1"
 
   # Code is not reloaded between requests
   config.cache_classes = true

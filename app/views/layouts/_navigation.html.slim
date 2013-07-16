@@ -2,7 +2,7 @@ nav class="top-bar"
   ul class="title-area"
     <!-- Title Area -->
     li class="name"
-      = link_to "pactWeb", root_path 
+      = link_to "pactWeb", main_app.root_path 
     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
     li class="toggle-topbar menu-icon"
       a href="#"
@@ -19,7 +19,7 @@ nav class="top-bar"
         a href="#"
           = link_to 'Calendar', '/calendar' 
       li
-	    = link_to 'Blog', posts_path 
+	    = link_to 'Blog', main_app.posts_path 
       li class="divider"
     <!-- Right Nav Section -->
     ul class="right"
@@ -29,21 +29,21 @@ nav class="top-bar"
       li class="divider"
       - if user_signed_in? 
         li
-		  = link_to 'Membership', koudoku.owner_subscriptions_path(@user)
-          = link_to 'Logout', destroy_user_session_path, :method=>'delete'
+		  = link_to 'Membership', Koudoku.owner_subscriptions_path(@user)
+          = link_to 'Logout', main_app.destroy_user_session_path, :method=>'delete'
       - else
         li
 		  = link_to 'Membership Plans', main_app.pricing_path
-          = link_to 'Login', new_user_session_path
+          = link_to 'Login', main_app.new_user_session_path
       - if user_signed_in? 
         li
-          = link_to('Edit account', edit_user_registration_path) 
+          = link_to('Edit account', main_app.edit_user_registration_path) 
           - if current_user.has_role? :admin 
             li
-              = link_to('Admin', users_path)
+              = link_to('Admin', main_app.users_path)
       - else 
         li
-          = link_to('Sign up', new_user_registration_path)
+          = link_to('Sign up', main_app.new_user_registration_path)
 	  ul class="has-form"
 		li
 		  a href="#" data-reveal-id="myModal" class="button ef-search-btn right"

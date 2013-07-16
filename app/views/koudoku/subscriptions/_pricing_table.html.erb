@@ -5,23 +5,23 @@
       <div class="thumbnail">
         <div class="caption">
           <h3><%= plan.name %></h3>
-          <h4><%= plan.price %></h4>
+          <h4><%= plan_price(plan) %></h4>
           <div class="call-to-action">
             <% if @subscription.nil? %>
               <%= link_to Koudoku.free_trial? ? 'Start Trial' : 'Sign Up', koudoku.new_subscription_path(plan: plan.id), class: "btn btn-success btn-large" %>
             <% elsif @subscription.persisted? %>
               <% if @subscription.plan == plan %>
                 <%= form_for @subscription, url: owner_subscription_path(@owner, @subscription) do |f| %>
-                  <%= f.submit 'Selected', class: "btn btn-large", disabled: 'disabled' %>
+                  <%= f.submit 'Selected', class: "button large", disabled: 'disabled' %>
                 <% end %>
               <% else %>
                 <%= form_for @subscription, url: owner_subscription_path(@owner, @subscription) do |f| %>
                   <%= f.hidden_field :plan_id, value: plan.id %>
-                  <%= f.submit @subscription.describe_difference(plan), class: "btn btn-success btn-large" %>
+                  <%= f.submit @subscription.describe_difference(plan), class: "button success large" %>
                 <% end %>
               <% end %>
             <% else %>
-              <%= link_to Koudoku.free_trial? ? 'Start Trial' : 'Upgrade', new_owner_subscription_path(@owner, plan: plan.id), class: "btn btn-success btn-large" %>
+              <%= link_to Koudoku.free_trial? ? 'Start Trial' : 'Upgrade', new_owner_subscription_path(@owner, plan: plan.id), class: "button success large" %>
             <% end %>
           </div>
           <ul class="features">

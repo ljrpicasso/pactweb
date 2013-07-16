@@ -29,7 +29,7 @@ nav class="top-bar"
       li class="divider"
       - if user_signed_in? 
         li
-		  = link_to 'Membership', Koudoku.owner_subscriptions_path(@user)
+		  = link_to 'Membership', koudoku.owner_subscriptions_path(@user)
           = link_to 'Logout', main_app.destroy_user_session_path, :method=>'delete'
       - else
         li

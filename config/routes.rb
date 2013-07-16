@@ -93,6 +93,10 @@
 #
 
 Pactweb::Application.routes.draw do
+
+  # Added by Koudoku.
+  mount Koudoku::Engine, at: 'koudoku'
+  match 'pricing' => 'koudoku::subscriptions#index', as: 'pricing'
   
   match '/calendar(/:year(/:month))' => 'calendar#index', :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}
 

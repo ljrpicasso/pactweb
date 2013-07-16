@@ -25,6 +25,16 @@
 #
 
 class User < ActiveRecord::Base
+
+  # Added by Koudoku.
+  has_one :subscription
+
+
+
+  # Added by Koudoku.
+  has_one :subscription
+
+
   rolify
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,

@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require foundation
 //= require custom
+//= require event_calendar
 //= require_tree .
 
 // $(document).foundation();

@@ -2,6 +2,27 @@
 <%= stylesheet_link_tag "event_calendar" %>
 <%= javascript_include_tag "event_calendar" %>
 
-<h1>Calendar</h1>
+<section class="ef-breadcrumbs ef-bottom-2_18">	
+<nav class="row">
+	<div class="large-6 small-12 columns">
+		<h3>Calendar<small>See What's On the PACT Calendar</small></h3>
+	</div>
+	
+	<div class="large-6 small-12 columns text-right">
+		<ul class="breadcrumbs">
+		  <li><%= link_to "Home", root_path %></li>
+		  <li class="current"><a href="#">Calendar</a></li>
+		</ul>
+	</div>
+</nav>	
+</section>
 
-<%= raw(event_calendar) %>
+<div class="row">
+  <div class="large-12 columns">
+  <p id="notice"><%= notice %></p>
+
+  <%= raw(event_calendar) %>
+
+</div>
+
+<%= render :partial => "layouts/join_us" %>

@@ -2028,411 +2028,411 @@ a.ef-icon span {
 }
 
 .ef-icn-1 span {
-	background-image: url('../images/icons/icn-1.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-1.svg' %>");
 }
 
 .ef-icn-2 span {
-	background-image: url('../images/icons/icn-2.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-2.svg' %>");
 }
 
 .ef-icn-3 span {
-	background-image: url('../images/icons/icn-3.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-3.svg' %>");
 }
 
 .ef-icn-4 span {
-	background-image: url('../images/icons/icn-4.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-4.svg' %>");
 }
 
 .ef-icn-5 span {
-	background-image: url('../images/icons/icn-5.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-5.svg' %>");
 }
 
 .ef-icn-6 span {
-	background-image: url('../images/icons/icn-6.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-6.svg' %>");
 }
 
 .ef-icn-7 span {
-	background-image: url('../images/icons/icn-7.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-7.svg' %>");
 }
 
 .ef-icn-8 span {
-	background-image: url('../images/icons/icn-8.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-8.svg' %>");
 }
 
 .ef-icn-9 span {
-	background-image: url('../images/icons/icn-9.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-9.svg' %>");
 }
 
 .ef-icn-10 span {
-	background-image: url('../images/icons/icn-10.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-10.svg' %>");
 }
 
 
 .ef-icn-11 span {
-	background-image: url('../images/icons/icn-11.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-11.svg' %>");
 }
 
 .ef-icn-12 span {
-	background-image: url('../images/icons/icn-12.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-12.svg' %>");
 }
 
 .ef-icn-13 span {
-	background-image: url('../images/icons/icn-13.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-13.svg' %>");
 }
 
 .ef-icn-14 span {
-	background-image: url('../images/icons/icn-14.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-14.svg' %>");
 }
 
 .ef-icn-15 span {
-	background-image: url('../images/icons/icn-15.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-15.svg' %>");
 }
 
 .ef-icn-16 span {
-	background-image: url('../images/icons/icn-16.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-16.svg' %>");
 }
 
 .ef-icn-17 span {
-	background-image: url('../images/icons/icn-17.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-17.svg' %>");
 }
 
 .ef-icn-18 span {
-	background-image: url('../images/icons/icn-18.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-18.svg' %>");
 }
 
 .ef-icn-19 span {
-	background-image: url('../images/icons/icn-19.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-19.svg' %>");
 }
 
 .ef-icn-20 span {
-	background-image: url('../images/icons/icn-20.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-20.svg' %>");
 }
 
 .ef-icn-21 span {
-	background-image: url('../images/icons/icn-21.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-21.svg' %>");
 }
 
 .ef-icn-22 span {
-	background-image: url('../images/icons/icn-22.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-22.svg' %>");
 }
 
 .ef-icn-23 span {
-	background-image: url('../images/icons/icn-23.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-23.svg' %>");
 }
 
 .ef-icn-24 span {
-	background-image: url('../images/icons/icn-24.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-24.svg' %>");
 }
 
 .ef-icn-25 span {
-	background-image: url('../images/icons/icn-25.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-25.svg' %>");
 }
 
 .ef-icn-26 span {
-	background-image: url('../images/icons/icn-26.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-26.svg' %>");
 }
 
 .ef-icn-27 span {
-	background-image: url('../images/icons/icn-27.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-27.svg' %>");
 }
 
 .ef-icn-28 span {
-	background-image: url('../images/icons/icn-28.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-28.svg' %>");
 }
 
 .ef-icn-29 span {
-	background-image: url('../images/icons/icn-29.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-29.svg' %>");
 }
 
 .ef-icn-30 span {
-	background-image: url('../images/icons/icn-30.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-30.svg' %>");
 }
 
 
 .ef-icn-31 span {
-	background-image: url('../images/icons/icn-31.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-31.svg' %>");
 }
 
 .ef-icn-32 span {
-	background-image: url('../images/icons/icn-32.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-32.svg' %>");
 }
 
 .ef-icn-33 span {
-	background-image: url('../images/icons/icn-33.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-33.svg' %>");
 }
 
 .ef-icn-34 span {
-	background-image: url('../images/icons/icn-34.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-34.svg' %>");
 }
 
 .ef-icn-35 span {
-	background-image: url('../images/icons/icn-35.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-35.svg' %>");
 }
 
 .ef-icn-36 span {
-	background-image: url('../images/icons/icn-36.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-36.svg' %>");
 }
 
 .ef-icn-37 span {
-	background-image: url('../images/icons/icn-37.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-37.svg' %>");
 }
 
 .ef-icn-38 span {
-	background-image: url('../images/icons/icn-38.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-38.svg' %>");
 }
 
 .ef-icn-39 span {
-	background-image: url('../images/icons/icn-39.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-39.svg' %>");
 }
 
 .ef-icn-40 span {
-	background-image: url('../images/icons/icn-40.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-40.svg' %>");
 }
 
 
 .ef-icn-41 span {
-	background-image: url('../images/icons/icn-41.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-41.svg' %>");
 }
 
 .ef-icn-42 span {
-	background-image: url('../images/icons/icn-42.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-42.svg' %>");
 }
 
 .ef-icn-43 span {
-	background-image: url('../images/icons/icn-43.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-43.svg' %>");
 }
 
 .ef-icn-44 span {
-	background-image: url('../images/icons/icn-44.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-44.svg' %>");
 }
 
 .ef-icn-45 span {
-	background-image: url('../images/icons/icn-45.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-45.svg' %>");
 }
 
 .ef-icn-46 span {
-	background-image: url('../images/icons/icn-46.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-46.svg' %>");
 }
 
 .ef-icn-47 span {
-	background-image: url('../images/icons/icn-47.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-47.svg' %>");
 }
 
 .ef-icn-48 span {
-	background-image: url('../images/icons/icn-48.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-48.svg' %>");
 }
 
 .ef-icn-49 span {
-	background-image: url('../images/icons/icn-49.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-49.svg' %>");
 }
 
 .ef-icn-50 span {
-	background-image: url('../images/icons/icn-50.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-50.svg' %>");
 }
 
 
 .ef-icn-51 span {
-	background-image: url('../images/icons/icn-51.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-51.svg' %>");
 }
 
 .ef-icn-52 span {
-	background-image: url('../images/icons/icn-52.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-52.svg' %>");
 }
 
 .ef-icn-53 span {
-	background-image: url('../images/icons/icn-53.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-53.svg' %>");
 }
 
 .ef-icn-54 span {
-	background-image: url('../images/icons/icn-54.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-54.svg' %>");
 }
 
 .ef-icn-55 span {
-	background-image: url('../images/icons/icn-55.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-55.svg' %>");
 }
 
 .ef-icn-56 span {
-	background-image: url('../images/icons/icn-56.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-56.svg' %>");
 }
 
 .ef-icn-57 span {
-	background-image: url('../images/icons/icn-57.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-57.svg' %>");
 }
 
 .ef-icn-58 span {
-	background-image: url('../images/icons/icn-58.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-58.svg' %>");
 }
 
 .ef-icn-59 span {
-	background-image: url('../images/icons/icn-59.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-59.svg' %>");
 }
 
 .ef-icn-60 span {
-	background-image: url('../images/icons/icn-60.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-60.svg' %>");
 }
 
 
 .ef-icn-61 span {
-	background-image: url('../images/icons/icn-61.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-61.svg' %>");
 }
 
 .ef-icn-62 span {
-	background-image: url('../images/icons/icn-62.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-62.svg' %>");
 }
 
 .ef-icn-63 span {
-	background-image: url('../images/icons/icn-63.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-63.svg' %>");
 }
 
 .ef-icn-64 span {
-	background-image: url('../images/icons/icn-64.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-64.svg' %>");
 }
 
 .ef-icn-65 span {
-	background-image: url('../images/icons/icn-65.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-65.svg' %>");
 }
 
 .ef-icn-66 span {
-	background-image: url('../images/icons/icn-66.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-66.svg' %>");
 }
 
 .ef-icn-67 span {
-	background-image: url('../images/icons/icn-67.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-67.svg' %>");
 }
 
 .ef-icn-68 span {
-	background-image: url('../images/icons/icn-68.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-68.svg' %>");
 }
 
 .ef-icn-69 span {
-	background-image: url('../images/icons/icn-69.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-69.svg' %>");
 }
 
 .ef-icn-70 span {
-	background-image: url('../images/icons/icn-70.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-70.svg' %>");
 }
 
 
 .ef-icn-71 span {
-	background-image: url('../images/icons/icn-71.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-71.svg' %>");
 }
 
 .ef-icn-72 span {
-	background-image: url('../images/icons/icn-72.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-72.svg' %>");
 }
 
 .ef-icn-73 span {
-	background-image: url('../images/icons/icn-73.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-73.svg' %>");
 }
 
 .ef-icn-74 span {
-	background-image: url('../images/icons/icn-74.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-74.svg' %>");
 }
 
 .ef-icn-75 span {
-	background-image: url('../images/icons/icn-75.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-75.svg' %>");
 }
 
 .ef-icn-76 span {
-	background-image: url('../images/icons/icn-76.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-76.svg' %>");
 }
 
 .ef-icn-77 span {
-	background-image: url('../images/icons/icn-77.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-77.svg' %>");
 }
 
 .ef-icn-78 span {
-	background-image: url('../images/icons/icn-78.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-78.svg' %>");
 }
 
 .ef-icn-79 span {
-	background-image: url('../images/icons/icn-79.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-79.svg' %>");
 }
 
 .ef-icn-80 span {
-	background-image: url('../images/icons/icn-80.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-80.svg' %>");
 }
 
 
 .ef-icn-81 span {
-	background-image: url('../images/icons/icn-81.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-81.svg' %>");
 }
 
 .ef-icn-82 span {
-	background-image: url('../images/icons/icn-82.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-82.svg' %>");
 }
 
 .ef-icn-83 span {
-	background-image: url('../images/icons/icn-83.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-83.svg' %>");
 }
 
 .ef-icn-84 span {
-	background-image: url('../images/icons/icn-84.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-84.svg' %>");
 }
 
 .ef-icn-85 span {
-	background-image: url('../images/icons/icn-85.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-85.svg' %>");
 }
 
 .ef-icn-86 span {
-	background-image: url('../images/icons/icn-86.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-86.svg' %>");
 }
 
 .ef-icn-87 span {
-	background-image: url('../images/icons/icn-87.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-87.svg' %>");
 }
 
 .ef-icn-88 span {
-	background-image: url('../images/icons/icn-88.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-88.svg' %>");
 }
 
 .ef-icn-89 span {
-	background-image: url('../images/icons/icn-89.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-89.svg' %>");
 }
 
 .ef-icn-90 span {
-	background-image: url('../images/icons/icn-90.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-90.svg' %>");
 }
 
 
 .ef-icn-91 span {
-	background-image: url('../images/icons/icn-91.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-91.svg' %>");
 }
 
 .ef-icn-92 span {
-	background-image: url('../images/icons/icn-92.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-92.svg' %>");
 }
 
 .ef-icn-93 span {
-	background-image: url('../images/icons/icn-93.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-93.svg' %>");
 }
 
 .ef-icn-94 span {
-	background-image: url('../images/icons/icn-94.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-94.svg' %>");
 }
 
 .ef-icn-95 span {
-	background-image: url('../images/icons/icn-95.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-95.svg' %>");
 }
 
 .ef-icn-96 span {
-	background-image: url('../images/icons/icn-96.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-96.svg' %>");
 }
 
 .ef-icn-97 span {
-	background-image: url('../images/icons/icn-97.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-97.svg' %>");
 }
 
 .ef-icn-98 span {
-	background-image: url('../images/icons/icn-98.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-98.svg' %>");
 }
 
 .ef-icn-99 span {
-	background-image: url('../images/icons/icn-99.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-99.svg' %>");
 }
 
 .ef-icn-100 span {
-	background-image: url('../images/icons/icn-100.svg');
+	background-image: ("<%= image_tag 'images/icons/icn-100.svg' %>");
 }
 
 
@@ -2563,7 +2563,7 @@ kbd {
 	position: absolute;
 	width: 78px;
 	height: 78px;
-	background: url('../images/pop.png') no-repeat center center;
+	background: url("<%= image_tag 'images/pop.png' %>") no-repeat center center;
 	top: 0;
 	right: 0;
 }
@@ -2659,8 +2659,8 @@ kbd {
 	border-width: 1px;
 	border-style: solid;
 	display: block;
-	float: left;
-	background-image: url('../images/accordion-icon.png');
+	float: left; 
+	background-image: url("<%= image_tag 'images/accordion-icon.png' %>");
 	background-position: right top;
 	background-repeat: no-repeat;
 }
@@ -2837,7 +2837,7 @@ kbd {
 }
 
 #myModal {
-	background-image: url('../images/slider-paging-bg.gif');
+	background-image: url("<%= image_tag 'images/slider-paging-bg.gif' %>");
 	background-position: center top;
 	background-repeat: repeat-y;
 }
@@ -2913,7 +2913,7 @@ kbd {
 .ef-testimonials cite {
 	display: block;
 	padding-bottom: 50px;
-	background: url('../images/testimonials.png') no-repeat right bottom;
+	background: url("<%= image_tag 'images/testimonials.png' %>") no-repeat right bottom;
 }
 
 
@@ -2936,7 +2936,7 @@ kbd {
 }
 
 .widget_contact {
-	background: url('../images/widget-contact-bg.gif') no-repeat right bottom;
+	background: url("<%= image_tag 'images/widget-contact-bg.gif' %>") no-repeat right bottom;
 }
 
 .widget_text ul {
@@ -2957,27 +2957,27 @@ kbd {
 }
 
 .widget_recent_comments h6 span {
-	background: url('../images/widget-icn-comments.png') no-repeat left top;
+	background: url("<%= image_tag 'images/widget-icn-comments.png' %>") no-repeat left top;
 }
 
 .widget_contact h6 span {
-	background: url('../images/widget-icn-contact.png') no-repeat left top;
+	background: url("<%= image_tag 'images/widget-icn-contact.png' %>") no-repeat left top;
 }
 
 .widget_categories h6 span {
-	background: url("../images/bloginfo-cat.png") no-repeat left -1px;
+	background: url("<%= image_tag 'images/bloginfo-cat.png' %>") no-repeat left -1px;
 }
 
 .widget_links h6 span {
-	background: url('../images/widget-icn-links.png') no-repeat left -1px;
+	background: url("<%= image_tag 'images/widget-icn-links.png' %>") no-repeat left -1px;
 }
 
 .widget_twitter h6 span {
-	background: url('../images/widget-icn-twt.png') no-repeat left -1px;
+	background: url("<%= image_tag 'images/widget-icn-twt.png' %>") no-repeat left -1px;
 }
 
 .widget_flickr h6 span {
-	background: url('../images/widget-icn-flickr.png') no-repeat left -1px;
+	background: url("<%= image_tag 'images/widget-icn-flickr.png' %>") no-repeat left -1px;
 }
 
 .widget_contact li {
@@ -2987,15 +2987,15 @@ kbd {
 }
 
 .widget_contact li.cont-phone {
-	background-image: url('../images/cont-phone.png');
+	background-image: url("<%= image_tag 'images/cont-phone.png' %>");
 }
 
 .widget_contact li.cont-email {
-	background-image: url('../images/cont-email.png');
+	background-image: url("<%= image_tag 'images/cont-email.png' %>");
 }
 
 .widget_contact li.cont-adress {
-	background-image: url('../images/cont-addr.png');
+	background-image: url("<%= image_tag 'images/cont-addr.png' %>");
 }
 
 .tagcloud a {
@@ -3041,7 +3041,7 @@ kbd {
 .ef-birdy {
 	width: 33px;
 	height: 26px;
-	background-image: url('../images/twitter-birdy.png');
+	background-image: url("<%= image_tag 'images/twitter-birdy.png' %>");
 	background-repeat: no-repeat;
 	background-position: left top;
 	margin-right: 0.938em;

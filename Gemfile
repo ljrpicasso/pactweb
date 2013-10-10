@@ -1,8 +1,8 @@
 # Gemfile for pactweb
 source 'https://rubygems.org'
 
-ruby '1.9.3'
-gem 'rails', '3.2.11'
+ruby '2.0.0'
+gem 'rails', '~> 4.0.0'
 
 gem 'devise'
 gem 'cancan'
@@ -10,12 +10,12 @@ gem 'rolify'
 gem 'figaro'
 gem 'simple_form'
 gem 'slim'
-gem 'activeadmin'
-gem "meta_search", '>= 1.1.0.pre'
+gem 'activeadmin', github: 'gregbell/active_admin'
+gem "meta_search"   #, '>= 1.1.0.pre'
 gem 'redcarpet'
 gem 'rouge'
 gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
-gem 'sass-rails',   '~> 3.2.3'
+gem 'sass-rails' #,   '~> 3.2.3'
 gem 'event-calendar', :require => 'event_calendar'
 gem 'google-analytics-rails'
 gem 'twitter'
@@ -24,8 +24,8 @@ gem 'koudoku'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'coffee-rails' #, '~> 3.2.1'
+  gem 'uglifier'     #, '>= 1.0.3'
   gem 'zurb-foundation', '~> 4.0.0'
 end
 
@@ -52,5 +52,5 @@ end
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
-gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby'   #, '~> 3.0.0'
 
